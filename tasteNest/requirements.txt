@@ -1,0 +1,11 @@
+﻿Core Django
+Django==5.2.6 # Based on the file comment
+Environment Variable Loader
+python-dotenv
+REST Framework
+djangorestframework
+CORS Headers
+django-cors-headers
+Cloudinary Integration
+cloudinary
+django-cloudinary-storage
