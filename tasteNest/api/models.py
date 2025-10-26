@@ -5,7 +5,7 @@ import uuid
 class User(models.Model):
     name = models.CharField(max_length=100)
     email = models.EmailField(max_length=100,unique=True,null=False,blank=False)
-    password = models.CharField()
+    password = models.CharField(max_length=100,null=False,blank=False)
     user_id = models.UUIDField(primary_key=True,default=uuid.uuid4,editable=False)
 
     def __str__(self):
