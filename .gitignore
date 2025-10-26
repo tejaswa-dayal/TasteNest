@@ -1,0 +1,77 @@
+========================
+
+1. PYTHON / DJANGO IGNORES
+
+========================
+
+Byte-compiled / optimized / dynamically loaded files
+
+pycache/
+*.py[cod]
+*$py.class
+
+C extensions
+
+*.so
+
+Environments and dependencies
+
+venv/
+env/
+pip-log.txt
+pip-delete-this-directory.txt
+.history/
+.vscode/
+
+Database
+
+Ignore local SQLite database file (if using default Django setup)
+
+db.sqlite3
+/media/   # Ignore local media files uploaded during development
+
+Django stuff
+
+*.log
+local_settings.py  # If you create a separate file for dev settings
+/static_root/      # Directory for collectstatic output
+/staticfiles/      # Another common static directory
+
+Secrets (CRITICAL)
+
+.env               # Contains SECRET_KEY, API keys, etc.
+*.env
+
+VS Code / IDE settings
+
+.vscode/
+.idea/
+
+========================
+
+2. JAVASCRIPT / REACT IGNORES
+
+========================
+
+Dependencies
+
+/node_modules
+
+Build output
+
+/build
+/dist
+/out
+
+Logs
+
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+OS Generated Files
+
+.DS_Store
+Thumbs.db

@@ -1,0 +1,19 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&family=Oswald:wght@200..700&display=swap');@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+@import "tailwindcss";
+
+
+
+@theme{
+    --font-sans : "Fredoka", sans-serif;
+    --font-Oswald: "Oswald", sans-serif;
+    --primary-color : #F3274C !important;
+    --secondary-color : #FFC222;
+    --gray-dark : #555555;
+    --gray-light : #D6D6D6;
+    --black-color : #222222;
+    --green-dark : #007A4A;
+    --green-light : #93DB17;
+    --navbar-black : #212121;
+    
+}
+
