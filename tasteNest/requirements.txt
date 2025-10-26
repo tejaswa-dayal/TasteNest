@@ -5,3 +5,4 @@ django-cors-headers==4.4.0
 cloudinary==1.41.0
 django-cloudinary-storage==0.3.0
 gunicorn
+Pillow
