@@ -50,9 +50,9 @@ const DishCard = ({bigCard=false,className,dish}:DishCardProps):ReactElement => 
     }
   return (
     <motion.div className={`border-3 bg-(--secondary-color)/50 border-(--secondary-color) rounded-lg relative flex flex-col ${!bigCard ? "shadow-2xl py-2 px-3.5" : "py-6 px-8"}  justify-between items-center transition-transform duration-700  mt-3 mb-3 ml-3 mr-3 min-h-72 group hover:scale-105 ${className}`} 
-    initial={{ y:100,opacity:0,}}
+    initial={{ y:20,opacity:0,}}
     whileInView={{y:0,opacity:1 }}
-    transition={{duration:0.8,ease:'easeIn'}}
+    transition={{duration:0.3,ease:'easeIn'}}
     >
         {dish.discounted_price && <div className={`absolute bg-(--primary-color)/79 -top-0.5 left-3 ${bigCard ? "w-11.5 h-12" : "w-10 h-10"} flex justify-center items-center [clip-path:polygon(0_0,100%_0,100%_68%,50%_100%,0_68%)] shadow-3xl`}>
             <h6 className={`text-white font-semibold uppercase ${bigCard ? "" : "text-sm"}`}>Sale</h6>
