@@ -175,6 +175,21 @@ const Home = () => {
       <Container>
         <div className='flex flex-col items-center gap-6 py-6'>
             <h1 className='sm:text-5xl max-sm:text-3xl text-3xl relative before:content-[""] before:absolute before:w-full  before:h-1 before:rounded-lg before:bg-(--secondary-color) before:-bottom-1 font-Oswald font-bold' data-aos="fade-up">Featured <span className='text-(--primary-color)'>Dishes</span></h1>
+            {
+              !featuredDishes ? <div className='py-20 flex flex-col items-center justify-center gap-6'>
+      <div className='relative w-20 h-20'>
+        <div className='absolute inset-0 border-4 border-(--gray-light) rounded-full'></div>
+        <div className='absolute inset-0 border-4 border-transparent border-t-(--primary-color) border-r-(--secondary-color) rounded-full animate-spin'></div>
+        <div className='absolute inset-0 flex items-center justify-center text-3xl'>
+          🍽️
+        </div>
+      </div>
+      <div className='text-center'>
+        <p className='text-2xl font-Oswald font-bold text-(--primary-color)'>
+          Fetching our star dishes...
+        </p>
+      </div>
+    </div> :          
             <div className='w-full'>
               {mounted && (
                 // key forces a remount only when slidesToShow changes (keeps reflows minimal)
@@ -191,8 +206,7 @@ const Home = () => {
                 </Slider>
               )}
               </div>
-            
-        
+            }
         </div>
       </Container>
       <Container>
