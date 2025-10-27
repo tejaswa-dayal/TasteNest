@@ -34,9 +34,7 @@ const Footer = () => {
               <hr  className=' text-(--secondary-color) '/>
               <div className='flex flex-wrap gap-x-2 justify-center'>
                 {
-                  footerQuickLinks.map((link,index)=>{
-                    console.log(Object.keys(link));
-                    
+                  footerQuickLinks.map((link,index)=>{                    
                       return (
                         <div key={index} className='cursor-pointer hover:scale-110 transition-all duration-300'>
                           <Link to={link[Object.keys(link)[0]]}>
