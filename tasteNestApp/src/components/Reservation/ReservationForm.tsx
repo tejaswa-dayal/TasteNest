@@ -72,10 +72,10 @@ const ReservationForm = () => {
       </div>
       <div className=' col-span-2 grid-cols-2 max-sm:grid-cols-1 grid gap-4 max-sm:gap-3'>
         <div className='col-span-1'>
-      <Input type='date' className=' bg-white rounded-sm py-2 outline-(--gray-light) text-(--black-color)/50' {...register("date")} min={new Date().toISOString().split('T')[0]}/>
+      <Input type='date' className=' bg-white rounded-sm py-2 outline-(--gray-light) text-(--black-color)/50 max-sm:grow' {...register("date")} min={new Date().toISOString().split('T')[0]}/>
         </div>
         <div className='col-span-1'>
-      <Input type='time' className=' bg-white rounded-sm py-2 outline-(--gray-light) text-(--black-color)/50' {...register("time")}/>
+      <Input type='time' className=' bg-white rounded-sm py-2 outline-(--gray-light) text-(--black-color)/50 max-sm:grow' {...register("time")}/>
         </div>
         <div className='col-span-1'>
             <Button type='submit' className='z-10 bg-(--primary-color) text-white font-semibold px-3 py-2 relative hover:scale-105 transition-all duration-700 before:absolute before:content[""] before:h-12 before:w-full before:border-2 before:border-(--primary-color) before:rounded-lg before:-z-10 before:-top-1 before:-right-2  hover:before:w-[20%] before:transition-all before:duration-700' >{isSubmitting? "Reserving a table" : "Reserve a Table"}
